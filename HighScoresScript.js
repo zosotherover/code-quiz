@@ -3,7 +3,7 @@ var highScore = document.querySelector("#highScore");
 var clear = document.querySelector("#clear");
 var goBack = document.querySelector("#goBack");
 
-// Event listener to clear all the current scores on the board
+// Event listener to clear scores on the board
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
