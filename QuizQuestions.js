@@ -77,7 +77,7 @@ function render(questionIndex) {
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
     }
-    // New for each for question choices
+    // New forEach for the question choices
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
@@ -106,11 +106,11 @@ function compare(event) {
         }
 
     }
-    // Question Index determines number question user is on
+    // Question Index--this determines the number of the question the user is on
     questionIndex++;
 
     if (questionIndex >= questions.length) {
-        // All done will append last page with user stats
+        // All done will append last page with user scores
         allDone();
         createDiv.textContent = "End of quiz!" + " " + "You scored  " + score + " out of " + questions.length + "  correct!";
     } else {
@@ -119,7 +119,7 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 
 }
-// All done will append last page
+// allDone function will append last page
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
@@ -127,7 +127,7 @@ function allDone() {
     // Heading:
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
-    createH1.textContent = "Thats the end of the Simpsons Quiz!  Whatever, I'll be at Moe's..."
+    createH1.textContent = "That's the end of the Simpsons Quiz!  Whatever, I'll be at Moe's..."
 
     questionsDiv.appendChild(createH1);
 
@@ -193,8 +193,8 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // links to final page
-            window.location.replace("./HighScores.html");
+            // links to High Scores page
+            window.location.replace("./HighScoresPage.html");
         }
     });
 

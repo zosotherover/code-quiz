@@ -3,40 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Jamie Morris Homework-4 Code Quiz -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- This is the style links -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- This is the title-->
+    <title>High Scores</title>
 
-    <title>Code Quiz Bryan Pero</title>
 </head>
 
 <body>
-    <!-- Link to highscores page -->
-    <a href="HighScoresPage.html.html">View Highscores</a>
-
     <!-- This is a wrapper -->
     <div id="wrapper">
         <!-- Div for timer -->
         <div id="currentTime"></div>
         <!-- Div for quiz content -->
         <div id="questionsDiv">
-            <h1>The Simpsons Quiz!</h1>
-            <p>This is a simple timed quiz on The Simpsons! Do you best to beat the clock and answer correctly. Keep in
-                mind wrong answers will subtract 10 seconds from the clock!</p>
-            <ul id="choicesUl"></ul>
+            <h1>Highscores</h1>
+            <ul id="highScore"></ul>
             <!-- Buttons -->
-            <button id="startTime">Start The Simpsons Quiz!</button>
+            <button id="goBack">Go Back</button>
+            <button id="clear" value="reset">Clear Highscore</button>
         </div>
-
     </div>
-
-
-    <script src="QuizQuestions.js"></script>
-
-
+    <script src="HighScoresScript.js"></script>
 </body>
 
 </html>
