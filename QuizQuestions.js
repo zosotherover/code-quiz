@@ -100,13 +100,13 @@ function compare(event) {
             createDiv.textContent = "Woo Hoo! That's right!:  " + questions[questionIndex].answer;
             // Correct condition 
         } else {
-            // Will deduct -5 seconds off secondsLeft for wrong answers
+            // Will deduct 10 seconds off secondsLeft for wrong answers
             secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "D'oh! Why you little! The correct answer is:  " + questions[questionIndex].answer;
         }
 
     }
-    // Question Index--this determines the number of the question the user is on
+    // QuestionIndex: this determines the number of the question the user is on
     questionIndex++;
 
     if (questionIndex >= questions.length) {
@@ -137,7 +137,7 @@ function allDone() {
 
     questionsDiv.appendChild(createP);
 
-    // Calculates time remaining and replaces it with score
+    // Calculates the remaining time and replaces it with score
     if (secondsLeft >= 0) {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");

@@ -7,7 +7,6 @@ body {
     background-size: cover;
     position: relative;
     font-weight: bold;
-    text-shadow: black;
     font-size: 20px;
     
 }
@@ -30,6 +29,7 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: yellow;
+    text-shadow: 1px 1px black;
 }
 #questionsDiv {
     margin: 20px;
@@ -46,11 +46,11 @@ body {
     padding: 10px;
     font-size: 20px;
     color: yellow;
+    text-shadow: 1px 1px black;
     top: 30%;
     left: 55%;
     width: auto;
     text-align: center;
-    text-decoration: none;
 }
 
 
@@ -61,6 +61,7 @@ body {
     padding: 10px;
     font-size: 20px;
     color: yellow;
+    text-shadow: 1px 1px black;
     top: 30%;
     right: 5%;
     text-align: center;
@@ -81,6 +82,7 @@ textarea {
     padding: 15px 32px;
     font-size: 20px;
     color: yellow;
+    text-shadow: 1px 1px black;
 }
 
 label {
@@ -103,6 +105,7 @@ li {
     width: 80%;
     font-size: 18px;
     color: yellow;
+    text-shadow: 1px 1px black;
 }
 
 #createDiv {
@@ -110,7 +113,8 @@ li {
     border-top: 1px solid lightgray;
 }
 
-/* Start media queries */
+/* Media Queried  */
+
 /* A Media Query max-width: 786px */
 @media screen and (max-width: 786px) {
 /* Resized content to fit 786px  */
