@@ -47,7 +47,7 @@ var penalty = 10;
 // Creates new element
 var ulCreate = document.createElement("ul");
 
-// Triggers timer on button, shows user a display on the screen
+// Triggers timer on button, displays timer on the screen
 timer.addEventListener("click", function () {
     // We are checking zero because its originally set to zero
     if (holdInterval === 0) {
@@ -65,7 +65,7 @@ timer.addEventListener("click", function () {
     render(questionIndex);
 });
 
-// Renders questions and choices to page: 
+// Renders questions and choices to the page: 
 function render(questionIndex) {
     // Clears existing data 
     questionsDiv.innerHTML = "";
@@ -112,7 +112,7 @@ function compare(event) {
     if (questionIndex >= questions.length) {
         // All done will append last page with user scores
         allDone();
-        createDiv.textContent = "End of quiz!" + " " + "You scored  " + score + " out of " + questions.length + "  correct!";
+        createDiv.textContent = "Don't have a cow, man!" + " " + "You scored  " + score + " out of " + questions.length + "  correct!";
     } else {
         render(questionIndex);
     }
