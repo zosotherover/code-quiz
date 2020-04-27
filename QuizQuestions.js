@@ -40,10 +40,13 @@ var wrapper = document.querySelector("#wrapper");
 
 // Seconds left is 15 seconds per question:
 var secondsLeft = 75;
+
 // Holds interval time
 var holdInterval = 0;
+
 // Holds penalty time
 var penalty = 10;
+
 // Creates new element
 var ulCreate = document.createElement("ul");
 
